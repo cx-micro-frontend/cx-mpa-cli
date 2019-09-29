@@ -1,0 +1,44 @@
+{
+  "name": "materials-admin",
+  "version": "0.0.1",
+  "description": "materials management for sunac",
+  "author": "BroccoliSpring <Lensgcx@163.com>",
+  "private": false,
+  "main": "src/main.js",
+  "scripts": {
+    "command": "node_modules\\cx-builder\\lib\\entry.sh developer",
+    "command:mac": "node_modules/cx-builder/lib/entry.sh developer",
+    "build": "NODE_ENV=production env_config=prod node ../../builder/src/run/prod/run.prod.js",
+    "upgrade": "node_modules\\cx-builder\\lib\\entry.sh root 6 3",
+    "reinstall": "node_modules\\cx-builder\\lib\\entry.sh root 6 4",
+    "upgrade:mac": "node_modules/cx-builder/lib/entry.sh root 6 3",
+    "reinstall:mac": "node_modules/cx-builder/lib/entry.sh root 6 4",
+    "clean": "rimraf ./dist/"
+  },
+  "files": [
+    "build"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "babel-plugin-import": "^1.12.2",
+    "mockjs": "^1.0.1-beta3",
+    "vant": "^2.2.3",
+    "vue": "2.5.21",
+    "vue-drawer-layout": "^1.3.0",
+    "vuex": "^3.1.1"
+  },
+  "devDependencies": {
+    "cx-builder": "^0.0.53-27",
+    "vue-template-compiler": "2.5.21"
+  },
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
